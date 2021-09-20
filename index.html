@@ -2,13 +2,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>Responsive Login and Registration Form</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <section>
       <div class="container">
-        <div class="user singinBx">
+        <div class="user signinBx">
           <div class="imgBx">
             <img
               src="https://raw.githubusercontent.com/joacoARG/responsive-login-and-registration-form/master/coffe_cup.jpg"
@@ -22,12 +21,40 @@
               <input type="password" name="password" placeholder="Password" />
               <input type="submit" name="" value="Login" />
               <p class="signup">
-                Don't have an acoount? <a href="#">Sign up</a>
+                Don't have an acoount?
+                <a href="#" onclick="toggleForm();">Sign up</a>
               </p>
             </form>
           </div>
         </div>
+        <div class="user signupBx">
+          <div class="formBx">
+            <form action="">
+              <h2>Create an acoount</h2>
+              <input type="text" name="username" placeholder="Username" />
+              <input type="email" name="email" placeholder="Email" />
+              <input type="password" name="password" placeholder="Password" />
+              <input
+                type="password"
+                name="password"
+                placeholder="Confirm password"
+              />
+              <input type="submit" name="" value="Sign Up" />
+              <p class="signup">
+                Already have an acoount?
+                <a href="#" onclick="toggleForm();">Sign in</a>
+              </p>
+            </form>
+          </div>
+          <div class="imgBx">
+            <img
+              src="https://raw.githubusercontent.com/joacoARG/responsive-login-and-registration-form/master/coffe_beans.jpg"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
